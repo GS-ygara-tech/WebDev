@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
@@ -11,7 +10,7 @@
               rel="stylesheet">
         <link rel="stylesheet" href="./assets/styles/variables.css">
         <link rel="stylesheet" href="./assets/styles/shared.css">
-        <link rel="stylesheet" href="./assets/styles/contato.css">
+        <link rel="stylesheet" href="./assets/styles/quiz.css">
     </head>
     <body>
         <header>
@@ -42,29 +41,22 @@
             </div>
         </header>
         <main>
-            <form id="contato-form" class="contato-form" novalidate>
-                <h2>Fale Conosco</h2>
-                <label for="nome" id="label-nome">Nome <span class="asterisk">*</span></label>
-                <input type="text" id="nome" name="nome" required placeholder="Seu nome" maxlength="40">
-                <div class="error-message" id="error-nome"></div>
-
-                <label for="email" id="label-email">E-mail <span class="asterisk">*</span></label>
-                <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                <div class="error-message" id="error-email"></div>
-
-                <label for="mensagem" id="label-mensagem">Mensagem <span class="asterisk">*</span></label>
-                <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem" minlength="10" maxlength="300"></textarea>
-                <div class="error-message" id="error-mensagem"></div>
-
-                <button type="submit">Enviar</button>
-                <div id="form-status"></div>
-            </form>
+            <div class="quiz-container">
+                <h1>Quiz - Enchentes</h1>
+                <div id="question-container">
+                    <p id="question">Carregando...</p>
+                    <div id="answers"></div>
+                    <p id="feedback"></p>
+                </div>
+                <button id="next-btn" class="hidden">Próxima</button>
+                <div id="result" class="hidden"></div>
+            </div>
         </main>
         <footer>
             <small>&copy; 2025 Ygará Tech. Todos os direitos reservados.</small>
         </footer>
 
         <script src="./assets/scripts/shared.js"></script>
-        <script src="./assets/scripts/contato.js"></script>
+        <script src="./assets/scripts/quiz.js"></script>
     </body>
 </html>
