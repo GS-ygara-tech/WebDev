@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ygará Tech</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/variables.css">
+        <link rel="stylesheet" href="./assets/styles/shared.css">
+        <link rel="stylesheet" href="./assets/styles/contato.css">
+    </head>
+    <body>
+        <header>
+            <button id="hamburger-btn" aria-label="Abrir menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <nav id="mobile-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#problema">O problema</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#publico-alvo">Público-alvo</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#./quiz.html">Quiz</a></li>
+                    <li><a href="#./contato">Contato</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul id="header-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#problema">O problema</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#publico-alvo">Público-alvo</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#./quiz.html">Quiz</a></li>
+                    <li><a href="#./contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div id="color-switcher">
+                <button class="color-btn" data-color="#123456" aria-label="Blue"></button>
+                <button class="color-btn" data-color="#e63946" aria-label="Red"></button>
+                <button class="color-btn" data-color="#1C383C" aria-label="Green"></button>
+            </div>
+            <div>
+                <img id="logo-header" src="./assets/images/logo.png" alt="Logo Ygará Tech">
+            </div>
+        </header>
+        <main>
+            <form id="contato-form" class="contato-form" novalidate>
+                <h2>Fale Conosco</h2>
+                <label for="nome" id="label-nome">Nome <span class="asterisk">*</span></label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome" maxlength="40">
+                <div class="error-message" id="error-nome"></div>
+
+                <label for="email" id="label-email">E-mail <span class="asterisk">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                <div class="error-message" id="error-email"></div>
+
+                <label for="mensagem" id="label-mensagem">Mensagem <span class="asterisk">*</span></label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem" minlength="10" maxlength="300"></textarea>
+                <div class="error-message" id="error-mensagem"></div>
+
+                <button type="submit">Enviar</button>
+                <div id="form-status"></div>
+            </form>
+        </main>
+        <footer>
+            <small>&copy; 2025 Ygará Tech. Todos os direitos reservados.</small>
+        </footer>
+
+        <script src="./assets/scripts/shared.js"></script>
+        <script src="./assets/scripts/contato.js"></script>
+    </body>
+</html>
