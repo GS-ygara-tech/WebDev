@@ -18,10 +18,10 @@ Este projeto foi desenvolvido para ser a landing page de WebDev na Global Soluti
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/DaviJDuarte/CP3-WebDev.git
+    git clone https://github.com/GS-ygara-tech/WebDev.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd CP3-WebDev
+    cd WebDev
     ```
 3. Abra o arquivo `index.html` no seu navegador.
