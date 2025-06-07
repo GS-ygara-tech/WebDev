@@ -1,4 +1,4 @@
-# CP3 -WebDev
+# GS - WebDev
 ## Integrantes - 1ESPY
 
 - [Davi de Jesus Duarte](https://github.com/DaviJDuarte)
