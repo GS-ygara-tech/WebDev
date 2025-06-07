@@ -16,9 +16,24 @@
     <body>
         <div id="header-container">
             <header>
-                <div>
-                    <img id="logo-header" src="./assets/images/logo.png" alt="Logo Ygará Tech">
-                </div>
+                <button id="hamburger-btn" aria-label="Abrir menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+                <nav id="mobile-menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#problema">O problema</a></li>
+                        <li><a href="#tecnologias">Tecnologias</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li><a href="#publico-alvo">Público-alvo</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#impacto">Impacto</a></li>
+                        <li><a href="#./quiz.html">Quiz</a></li>
+                        <li><a href="#./contato">Contato</a></li>
+                    </ul>
+                </nav>
                 <nav>
                     <ul id="header-menu">
                         <li><a href="./index.html">Home</a></li>
@@ -28,8 +43,18 @@
                         <li><a href="#publico-alvo">Público-alvo</a></li>
                         <li><a href="#beneficios">Benefícios</a></li>
                         <li><a href="#impacto">Impacto</a></li>
+                        <li><a href="#./quiz.html">Quiz</a></li>
+                        <li><a href="#./contato">Contato</a></li>
                     </ul>
                 </nav>
+                <div id="color-switcher">
+                    <button class="color-btn" data-color="#123456" aria-label="Blue"></button>
+                    <button class="color-btn" data-color="#e63946" aria-label="Red"></button>
+                    <button class="color-btn" data-color="#1C383C" aria-label="Green"></button>
+                </div>
+                <div>
+                    <img id="logo-header" src="./assets/images/logo.png" alt="Logo Ygará Tech">
+                </div>
             </header>
             <div id="hero-container">
                 <h1 id="hero-title">Ygará Tech</h1>
@@ -38,7 +63,15 @@
         </div>
         <main>
             <section class="section-primary" id="problema">
-                <img class="section-image" src="./assets/images/img.png" alt="Casas em área ribeirinha">
+                <div class="slideshow-container" id="problema-slideshow">
+                    <img class="slide" src="./assets/images/img.png" alt="Casas em área ribeirinha"
+                         style="display:block;">
+                    <img class="slide" src="./assets/images/img_1.png" alt="Homem em uma canoa na enchente e moça sentada na janela" style="display:none;">
+                    <img class="slide" src="./assets/images/img_2.png" alt="Pessoas usando canoas em rua inundada" style="display:none;">
+                    <button class="slide-btn prev" aria-label="Anterior">&#10094;</button>
+                    <button class="slide-btn next" aria-label="Próximo">&#10095;</button>
+                </div>
+
                 <div class="section-text">
                     <h3 class="section-title">
                         O problema
@@ -148,5 +181,7 @@
         <footer>
             <small>&copy; 2025 Ygará Tech. Todos os direitos reservados.</small>
         </footer>
+
+        <script src="./assets/scripts/shared.js"></script>
     </body>
 </html>
