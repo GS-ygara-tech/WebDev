@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ygará Tech</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/variables.css">
+        <link rel="stylesheet" href="./assets/styles/shared.css">
+        <link rel="stylesheet" href="./assets/styles/index.css">
+    </head>
+    <body>
+        <div id="header-container">
+            <header>
+                <div>
+                    <img id="logo-header" src="./assets/images/logo.png" alt="Logo Ygará Tech">
+                </div>
+                <nav>
+                    <ul id="header-menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#problema">O problema</a></li>
+                        <li><a href="#tecnologias">Tecnologias</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li><a href="#publico-alvo">Público-alvo</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#impacto">Impacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="hero-container">
+                <h1 id="hero-title">Ygará Tech</h1>
+                <p id="hero-subtitle">Sistema para prevenção contra enchentes</p>
+            </div>
+        </div>
+        <main>
+            <section class="section-primary" id="problema">
+                <img class="section-image" src="./assets/images/img.png" alt="Casas em área ribeirinha">
+                <div class="section-text">
+                    <h3 class="section-title">
+                        O problema
+                    </h3>
+                    <div class="paragraphs">
+                        <p class="section-text">Moradores ribeirinhos convivem com o medo constante de
+                            enchentes
+                            repentinas.
+                            A falta de monitoramento em tempo real dificulta ações rápidas.</p>
+                        <p class="section-text">A Ygará Tech é um kit de monitoramento de enchentes que qualquer morador
+                            pode instalar em sua comunidade.</p></div>
+                </div>
+            </section>
+            <section class="section-secondary" id="tecnologias">
+                <div class="section-text">
+                    <h3 class="section-title">
+                        Tecnologias Usadas
+                    </h3>
+                    <div class="paragraphs">
+                        <p class="section-text">O kit usa Arduino, sensores e comunicação LoRa, permitindo fácil
+                            instalação em qualquer lugar, até onde não há internet</p>
+                        <p class="section-text">Os dados são processados com Python, salvos no PostgreSQL e acessados
+                            via aplicativo React Native, com mapas usando a API do Google.</p></div>
+                </div>
+                <div class="tech-images-container">
+                    <img class="tech-images" src="./assets/images/tech-1.png"
+                         alt="Logo react native, python, postgresql e aws">
+                    <img class="tech-images-2" src="./assets/images/tech-2.png" alt="Logo google maps, arduino e lora">
+                </div>
+            </section>
+            <section class="section-primary" id="objetivos">
+                <h3 class="section-title text-center">
+                    Objetivos
+                </h3>
+                <div class="objetivos-wrapper">
+                    <div class="objetivo-container">
+                        <div class="objetivo">
+                            <img class="icon-objetivo" src="./assets/icons/siren.png" alt="sirene">
+                            <p>Alertar moradores com antecedência sobre riscos de enchente.</p>
+                        </div>
+                        <div class="objetivo">
+                            <img class="icon-objetivo" src="./assets/icons/building.png" alt="prédio cortado ao meio">
+                            <p>Reduzir perdas materiais e preservar vidas em comunidades vulneráveis.</p>
+                        </div>
+                    </div>
+                    <img id="objetivos-main-image" src="./assets/images/ajuda.png"
+                         alt="pessoa ajudando outra pessoa a escalar montanha">
+                    <div class="objetivo-container">
+                        <div class="objetivo">
+                            <img class="icon-objetivo" src="./assets/icons/firefighter.png" alt="bombeiro">
+                            <p>Fornecer dados confiáveis para apoiar ações da defesa civil.</p>
+                        </div>
+                        <div class="objetivo">
+                            <img class="icon-objetivo" src="./assets/icons/defense.png"
+                                 alt="escudo com símbolo de alerta">
+                            <p>Criar uma cultura de prevenção e monitoramento acessível.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-secondary" id="publico-alvo">
+                <img class="imagem-publico-alvo" src="./assets/images/olhando-enchente.png"
+                     alt="moradores e defesa civil olhando para a enchente">
+                <div class="section-text">
+                    <h3 class="section-title">
+                        Nosso Público-alvo
+                    </h3>
+                    <div class="paragraphs">
+                        <p class="section-text">Moradores de áreas ribeirinhas com risco de alagamento frequente.
+                            Comunidades com pouco acesso à informação em tempo real.</p>
+                        <p class="section-text">OAgentes da defesa civil responsáveis por ações preventivas. Gestores
+                            públicos e técnicos ambientais que precisam de dados confiáveis.</p></div>
+                </div>
+            </section>
+            <section class="section-primary" id="beneficios">
+                <div class="section-text">
+                    <h3 class="section-title">
+                        Os benefícios da solução
+                    </h3>
+                    <div class="paragraphs">
+                        <p class="section-text">A população será avisada com antecedência sobre enchentes. Isso ajuda a
+                            salvar vidas e proteger bens materiais.</p>
+                        <p class="section-text">Não é preciso esperar por grandes obras do governo. O próprio cidadão
+                            pode
+                            instalar o kit e começar a monitorar sua região.</p></div>
+                </div>
+                <img class="section-image" src="./assets/images/saude.png"
+                     alt="Bloquinhos de madeira com ícones de saúde">
+            </section>
+            <hr class="divider">
+            <section class="section-primary" id="impacto">
+                <div class="section-text">
+                    <h3 class="section-title">
+                        Como a solução ajudará no dia a dia
+                    </h3>
+                    <div class="paragraphs">
+                        <p class="section-text">Não é preciso esperar por grandes obras do governo. O próprio cidadão
+                            pode
+                            instalar o kit e começar a monitorar sua região.</p>
+                        <p class="section-text">Com o kit instalado, o morador sente que tem o controle da situação. A
+                            solução cabe na palma da mão e começa no quintal de casa.</p></div>
+                </div>
+                <img class="section-image" src="./assets/images/colaboracao.png"
+                     alt="Mãos juntas em sinal de colaboração">
+            </section>
+        </main>
+        <footer>
+            <small>&copy; 2025 Ygará Tech. Todos os direitos reservados.</small>
+        </footer>
+    </body>
+</html>
